@@ -1,0 +1,130 @@
+@font-face {
+    font-family: fa;
+    src: url(./font/Dirooz.woff) format('woff');
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type:georgian;
+}
+body{
+    font-family: fa;
+    background-color: rgb(56, 56, 56);
+}
+button{
+    border:none;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: orange;
+}
+.menu{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    transition: .7s;
+}
+.menu:hover{
+    box-shadow: -15px 0px 5px white;
+}
+.menu::after{
+    content:'\002630';
+    font-size: 20px;
+}
+.plytible{
+    width: 0;
+    height: 0;
+    transition: .3s;
+}
+.plytible::after{
+    content:none;
+}
+h2{
+    width: 163px;
+    color: rgb(255, 172, 17);
+    padding: 5px 15px;
+    font-size: 27px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:fixed;
+    right: 0;
+    top: 0;
+    width:0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    transition: .6s;
+}
+.get-width{
+    width: 300px;
+}
+.con-items{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;    
+    padding:15px;
+    border-bottom: 1px solid white;
+    transition: .5s;
+    cursor: pointer;
+}
+.con-items:hover{
+    background-color: rgb(216, 163, 64);
+}
+.double-div-con{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+}
+.button-con{
+    display: flex;
+    align-items: flex-end;
+}
+.secend-button{
+    bottom: 0;
+    transition: .7s;
+}
+.secend-button::after{
+    content: '\002715';
+    font-size:30px;
+    line-height:35px;
+}
+.secend-button:hover{
+    box-shadow: 15px 0px 5px white;
+}
+div img{
+    width: 50px;
+    border-radius: 50px;
+    transition: .7s;
+    cursor: pointer;
+}
+.image-container{
+    display: flex;
+    margin-top: 10px;
+}
+.content-cont{
+    display: flex;
+    align-items: center;
+    width:0;
+    height: 50px;
+    background-color:rgb(245, 191, 16);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    transition:.5s;
+}
+.width-for-con-content{
+    width: 195px;
+}
+.content-cont p{
+    padding-right:40px;
+    font-size:16px;
+}
+.transformed-on-click{
+    transform:rotate(360deg);
+}
